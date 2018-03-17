@@ -1,0 +1,7 @@
+<h2>Log In</h2>
+<%= form_tag login_path do %>
+  <%= text_field_tag "user[name]", nil, placeholder: "Username" %>
+  <%= password_field_tag "user[password]", nil, placeholder: "Username" %>
+  <%= submit_tag "Log In" %>
+<% end %>
+<h2>Or <%= link_to "create an account", new_user_path %></h2>
