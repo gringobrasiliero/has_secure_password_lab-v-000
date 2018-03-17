@@ -7,7 +7,7 @@ end
 
 
 private
-def def require_pass
+def require_pass
   return head(:forbidden) unless @user.authenticate(params[:password])
 end
 
