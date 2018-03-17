@@ -18,9 +18,5 @@ def destroy
   redirect_to login_path
 end
 
-private
-def require_pass
-  return head(:forbidden) unless @user.authenticate(params[:password])
-end
 
 end
