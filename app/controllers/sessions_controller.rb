@@ -5,6 +5,10 @@ def create
   session[:user_id] = @user.id
 end
 
+def destroy
+  session.delete :user_id
+  redirect_to login_path
+end
 
 private
 def require_pass
